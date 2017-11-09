@@ -1,0 +1,10 @@
+<br>
+<h2>Lista de Pessoas
+</h2>
+
+  <li class="form-control" *ngFor="let p of pessoas| async">
+    Nome: {{ p.nome + ' ' + p.sobrenome}}
+    <br>
+    Email: {{p.email}}
+  </li>
+
